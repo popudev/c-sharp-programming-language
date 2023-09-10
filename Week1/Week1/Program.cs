@@ -24,6 +24,13 @@ namespace Week1
                         ex.Run();
                         break;
                     }
+
+                case 2:
+                    {
+                        Exercise2 ex = new Exercise2();
+                        ex.Run();
+                        break;
+                    }
                 case 6:
                     {
                         Exercise6 ex = new Exercise6();
