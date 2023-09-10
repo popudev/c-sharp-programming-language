@@ -69,6 +69,24 @@ namespace Week1
                         ex.Run();
                         break;
                     }
+                case 11:
+                    {
+                        Exercise11 ex = new Exercise11();
+                        ex.Run();
+                        break;
+                    }
+                case 12:
+                    {
+                        Exercise12 ex = new Exercise12();
+                        ex.Run();
+                        break;
+                    }
+                case 13:
+                    {
+                        Exercise13 ex = new Exercise13();
+                        ex.Run();
+                        break;
+                    }
             }
         }
         static void Main(string[] args)
