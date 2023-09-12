@@ -8,34 +8,45 @@ namespace week2
 {
     internal class Nhanvien
     {
-        const int luong1Ngay = 200000;
+        public static int luong1Ngay = 200000;
         private string maSo;
         private string hoTen;
         private int soNgayCong;
         private char xepLoai;
         private int luong;
-        public string MaSo { get; set; }
-        public string HoTen { get; set; }
-        public int SoNgayCong { get; set; }
+        public string MaSo { 
+            get => maSo;
+            set
+            {
+                maSo = value;
+            }
+        }
+        public string HoTen { get=>hoTen; set { hoTen = value; } }
+        public int SoNgayCong { 
+            get => soNgayCong;
+            set
+            {
+                if (value <= 0)
+                    Console.WriteLine("Nhap lon hon 0");
+                else
+                    soNgayCong = value;
+            }
+        }
         public char XepLoai
         {
             get
             {
-                return xepLoai;
-            }
-            set
-            {
                 if (soNgayCong > 26)
                 {
-                    xepLoai = 'A';
+                    return 'A';
                 }
                 else if (22 <= soNgayCong && soNgayCong <= 26)
                 {
-                    xepLoai = 'B';
+                    return 'B';
                 }
                 else
                 {
-                    xepLoai = 'C';
+                    return 'C';
                 }
             }
         }
@@ -62,24 +73,28 @@ namespace week2
             this.hoTen = null;
             this.soNgayCong = 0;
         }
-        public Nhanvien nhapNhanvien()
+        public void nhapNhanvien()
         {
             Console.WriteLine("Nhap thong tin nhan vien");
             Console.Write("Nhap ma so: ");
-            string maSo = Console.ReadLine();
+            MaSo = Console.ReadLine();
             Console.Write("Nhap ho va ten: ");
-            string hoTen = Console.ReadLine();
+            HoTen = Console.ReadLine();
             Console.Write("Nhap so ngay cong: ");
-            int soNgayCong = int.Parse(Console.ReadLine());
-            return new Nhanvien(maSo, hoTen, soNgayCong);
+            while (true)
+            {
+                SoNgayCong = int.Parse(Console.ReadLine());
+                if (SoNgayCong > 0) break;
+            }
+          
 
         }
         public String thongTinNhanVien()
         {
-            return $"ma So: {maSo} \n" +
-                $"Ho va ten: {hoTen} \n+" +
-                $"So ngay Cong: {soNgayCong} \n+" +
-                $"Xep loai: {xepLoai}";
+            return $"ma So: {MaSo} \n" +
+                $"Ho va ten: {HoTen} \n" +
+                $"So ngay Cong: {SoNgayCong} \n" +
+                $"Xep loai: {XepLoai}";
         }
         public int luongNgay()
         {

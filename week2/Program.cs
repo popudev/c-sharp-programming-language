@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using week2;
+
+Nhanvien nhanvien = new Nhanvien();
+nhanvien.nhapNhanvien();
+Console.WriteLine(nhanvien.thongTinNhanVien());
