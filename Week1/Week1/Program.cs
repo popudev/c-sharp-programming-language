@@ -24,6 +24,31 @@ namespace Week1
                         ex.Run();
                         break;
                     }
+
+                case 2:
+                    {
+                        Exercise2 ex = new Exercise2();
+                        ex.Run();
+                        break;
+                    }
+                case 3:
+                    {
+                        Exercise3 ex = new Exercise3();
+                        ex.Run();
+                        break;
+                    }
+                case 4:
+                    {
+                        Exercise4 ex = new Exercise4();
+                        ex.Run();
+                        break;
+                    }
+                case 5:
+                    {
+                        Exercise5 ex = new Exercise5();
+                        ex.Run();
+                        break;
+                    }
                 case 6:
                     {
                         Exercise6 ex = new Exercise6();
@@ -41,6 +66,36 @@ namespace Week1
                 case 8:
                     {
                         Exercise8 ex = new Exercise8();
+                        ex.Run();
+                        break;
+                    }
+                case 9:
+                    {
+                        Exercise9 ex = new Exercise9();
+                        ex.Run();
+                        break;
+                    }
+                case 10:
+                    {
+                        Exercise10 ex = new Exercise10();
+                        ex.Run();
+                        break;
+                    }
+                case 11:
+                    {
+                        Exercise11 ex = new Exercise11();
+                        ex.Run();
+                        break;
+                    }
+                case 12:
+                    {
+                        Exercise12 ex = new Exercise12();
+                        ex.Run();
+                        break;
+                    }
+                case 13:
+                    {
+                        Exercise13 ex = new Exercise13();
                         ex.Run();
                         break;
                     }
