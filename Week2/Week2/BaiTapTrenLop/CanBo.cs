@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace week2
+namespace Week2.BaiTapTrenLop
 {
     internal class CanBo
     {
@@ -13,11 +13,12 @@ namespace week2
         private string gioitinh;
         private string diachi;
 
-        public CanBo(string hoten, int namsinh, string gioitinh, string diachi) { 
+        public CanBo(string hoten, int namsinh, string gioitinh, string diachi)
+        {
             this.hoten = hoten;
-            this.namsinh = namsinh; 
+            this.namsinh = namsinh;
             this.gioitinh = gioitinh;
-            this.diachi = diachi;   
+            this.diachi = diachi;
         }
         public string Hoten
         {

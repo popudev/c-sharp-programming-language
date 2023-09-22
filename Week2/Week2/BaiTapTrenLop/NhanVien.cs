@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace week2
+namespace Week2.BaiTapTrenLop
 {
     internal class Nhanvien
     {
@@ -14,15 +14,17 @@ namespace week2
         private int soNgayCong;
         private char xepLoai;
         private int luong;
-        public string MaSo { 
+        public string MaSo
+        {
             get => maSo;
             set
             {
                 maSo = value;
             }
         }
-        public string HoTen { get=>hoTen; set { hoTen = value; } }
-        public int SoNgayCong { 
+        public string HoTen { get => hoTen; set { hoTen = value; } }
+        public int SoNgayCong
+        {
             get => soNgayCong;
             set
             {
@@ -86,7 +88,7 @@ namespace week2
                 SoNgayCong = int.Parse(Console.ReadLine());
                 if (SoNgayCong > 0) break;
             }
-          
+
 
         }
         public String thongTinNhanVien()
